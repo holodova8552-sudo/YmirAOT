@@ -1,0 +1,29 @@
+{
+  "name": "aot-whatsapp-game",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "axios": "^1.5.0",
+    "cookie": "^0.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "next": "14.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swr": "^2.2.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.0.0",
+    "tailwindcss": "^4.0.0",
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
