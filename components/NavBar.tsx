@@ -6,7 +6,7 @@ export default function NavBar() {
     <nav className="bg-black bg-opacity-60 text-white p-3">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-3">
-          <img src="/public/images/logo.png" alt="AOT Logo" className="h-10 w-10" />
+          <img src="images/logo.png" alt="AOT Logo" className="h-10 w-10" />
           <span className="font-bold">Scout Corps</span>
         </div>
         <div className="space-x-4">
