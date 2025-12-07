@@ -18,7 +18,8 @@ async function sendOtpWhatsApp(phone: string, text: string) {
   const url = `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`;
   const data = new URLSearchParams({
     From: `whatsapp:${from.replace(/^whatsapp:/, "")}`,
-    To: `whatsapp:${phone.replace(/^whatsapp:/, "").replace(/^+/, "")}`,
+    To: `whatsapp:${phone.replace(/^whatsapp:/, "").replace(/^\+/, "")
+}`,
     Body: text,
   });
   await axios.post(url, data.toString(), {
