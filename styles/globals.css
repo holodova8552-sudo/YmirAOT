@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.aot-bg {
+  background-image: url('/images/bg-aot.jpg');
+}
+
+/* simple translucent card */
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
